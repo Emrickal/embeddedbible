@@ -26,7 +26,6 @@ I am running Python3 - Python 3.10.4 and had to pip install the following packag
 Once NLTK was installed, I had to import nltk stopwords and punkt. I did this my accessing python3 console and running the following commands:
     import nltk
     nltk.download('stopwords')
-
     import nltk
     nltk.download('punkt')
 
