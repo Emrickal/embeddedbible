@@ -1,7 +1,7 @@
 #
 # Author: Christopher Minson 
 # www.christopherminson.com
-# 
+# Edit by Emrickal
 #
 import sys
 import os
@@ -147,6 +147,6 @@ if __name__ == '__main__':
     sentence_embeddings = build_sentence_model(textinput.AllStoppedSentences)
     print(sentence_embeddings[0])
     print(sentence_embeddings.shape)
-    #build_book_model(textinput.BookSentencesList)
+    build_book_model(textinput.BookSentencesList)
 
     print('done')
