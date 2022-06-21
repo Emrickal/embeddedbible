@@ -17,7 +17,7 @@ def build_word_model(word_list):
 
     model = gensim.models.Word2Vec(word_list, 
         min_count = WORD2VEC_MINWORD_COUNT, 
-        size = WORD2VEC_SIZE, 
+        vector_size = WORD2VEC_SIZE, 
         window = MAX_WORD2VEC_WINDOW,
         sg = WORD2VEC_SG)
 
