@@ -1,7 +1,7 @@
 #
 # Author: Christopher Minson 
 # www.christopherminson.com
-# 
+# Edit by Emrickal
 #
 import tensorflow as tf
 import numpy as np
@@ -53,9 +53,9 @@ if __name__ == '__main__':
     print('god\n', result)
     result = model.wv.most_similar(positive=['jesus'], topn=10)
     print('jesus\n', result)
-    result = model.most_similar(positive=['god'], negative=['jesus'], topn=20)
+    result = model.wv.most_similar(positive=['god'], negative=['jesus'], topn=20)
     print('god - jesus\n', result)
-    result = model.most_similar(positive=['jesus'], negative=['god'], topn=20)
+    result = model.wv.most_similar(positive=['jesus'], negative=['god'], topn=20)
     print('jesus - god\n', result)
     result = model.wv.most_similar(positive=['mary'], topn=10)
     print('mary\n', result)
@@ -67,4 +67,3 @@ if __name__ == '__main__':
     sentence_matrix = np.load('./MODELS/model.sentences.npy')
     result = get_top_similar(textinput.AllSentences, textinput.AllStoppedSentences[0], textinput.AllStoppedSentences, sentence_matrix, 3)
     print(result)
-
