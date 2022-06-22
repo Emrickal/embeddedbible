@@ -15,14 +15,14 @@ Within genphrasemodels.py - Needed to uncomment line 150 to build the book model
 
 I am running Python3 - Python 3.10.4 and had to pip install the following packages to allow all programs to work:
 
-  tensorflow
-  tensorflow-hub
-  nltk
-  sklearn
-  gensim
-  numpy
-  matplot
-  spacy
+    tensorflow
+    tensorflow-hub
+    nltk
+    sklearn
+    gensim
+    numpy
+    matplot
+    spacy
  
 Once NLTK was installed, I had to import nltk stopwords and punkt. I did this my accessing python3 console and running the following commands:
 
