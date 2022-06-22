@@ -32,9 +32,12 @@ Once NLTK was installed, I had to import nltk stopwords and punkt. I did this my
     nltk.download('punkt')
 
 Finally, I had to manually create the following folders for the output of the code to work:
+
     Models
     Charts
 
+
+------------------------------------------------------------------------------------------------------------------------------------
 
 This project is discussed <a href="https://www.christopherminson.com/articles/aibible.html">here</a>
 <p>
