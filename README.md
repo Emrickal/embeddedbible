@@ -18,7 +18,7 @@ I am running Python3 - Python 3.10.4 and had to pip install the following packag
     tensorflow
     tensorflow-hub
     nltk
-    sklearn
+    sklearn - appears to now be depreceated, but is installed. **New requirement - pip install scikit-learn**
     gensim
     numpy
     matplot
