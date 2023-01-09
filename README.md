@@ -33,8 +33,8 @@ Once NLTK was installed, I had to import nltk stopwords and punkt. I did this my
 
 Finally, I had to manually create the following folders for the output of the code to work:
 
-    Models
-    Charts
+    MODELS
+    CHARTS
 
 
 ------------------------------------------------------------------------------------------------------------------------------------
