@@ -22,7 +22,7 @@ def plot_similar_books(matrix, chart_name):
     coordinates2D = sklearn.manifold.TSNE(random_state=RS).fit_transform(matrix)
     x = coordinates2D[:,0]
     y = coordinates2D[:,1]
-    #print('coord books', coordinates2D.shape, 'matrix', matrix.shape)
+    print('coord books', coordinates2D.shape, 'matrix', matrix.shape)
 
     colors = []
     sizes = []
@@ -30,6 +30,7 @@ def plot_similar_books(matrix, chart_name):
     for book in textinput.ALL_BOOKS:
         if book in textinput.BOOKS_OLD_TESTAMENT: color = 'red'
         if book in textinput.BOOKS_NEW_TESTAMENT: color = 'green'
+        if book in textinput.BOOKS_APOCRYPHA: color = 'grey'
 
         colors.append(color)
         sizes.append(1600)
@@ -51,8 +52,8 @@ def plot_word_vectors(word_list, matrix, chart_name):
     coordinates2D = sklearn.manifold.TSNE(random_state=RS).fit_transform(matrix)
     x = coordinates2D[:,0]
     y = coordinates2D[:,1]
-    #print('x', x)
-    #print('y', y)
+    print('x', x)
+    print('y', y)
     print('coord words', coordinates2D.shape, 'matrix', matrix.shape)
 
     colors = []

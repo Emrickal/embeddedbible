@@ -2,7 +2,8 @@
 # Author: Christopher Minson 
 # www.christopherminson.com
 # 
-#
+# 1-17-23 - Emrickal - Added Apocrypha Books
+
 import sys
 import os
 import string
@@ -27,7 +28,11 @@ BOOKS_NEW_TESTAMENT = [
 '3 John', 'Jude', 'Revelation'
 ]
 
-ALL_BOOKS = BOOKS_OLD_TESTAMENT + BOOKS_NEW_TESTAMENT
+BOOKS_APOCRYPHA = [
+'1 Esdras', '2 Esdras', 'Additions to Esther', '1 Macabees', '2 Macabees', 'Tobias', 'Judith', 'Wisdom', 'Sirach', 'Baruch', 'Epistle of Jeremiah', 'Susanna', 'Prayer of Azariah', 'Prayer of Manasseh', 'Bel and the Dragon', 'Laodiceans'
+]
+
+ALL_BOOKS = BOOKS_OLD_TESTAMENT + BOOKS_NEW_TESTAMENT + BOOKS_APOCRYPHA
 
 AllBooks = {}
 AllStoppedWords = []
