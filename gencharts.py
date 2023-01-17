@@ -33,12 +33,12 @@ def plot_similar_books(matrix, chart_name):
         if book in textinput.BOOKS_APOCRYPHA: color = 'grey'
 
         colors.append(color)
-        sizes.append(500)
+        sizes.append(1000)
 
     matplotlib.pyplot.scatter(x, y, s=sizes, alpha=0.4, color=colors)
 
     for book_index, book_name in enumerate(textinput.ALL_BOOKS):
-        matplotlib.pyplot.text(x[book_index], y[book_index], book_name, fontsize=6, ha='center', va='center')
+        matplotlib.pyplot.text(x[book_index], y[book_index], book_name, fontsize=4, ha='center', va='center')
 
     cur_axes = matplotlib.pyplot.gca()
     cur_axes.axes.get_xaxis().set_ticklabels([])
@@ -61,7 +61,7 @@ def plot_word_vectors(word_list, matrix, chart_name):
 
     for i in range(len(x)):
         colors.append('green')
-        sizes.append(500)
+        sizes.append(1000)
 
     matplotlib.pyplot.scatter(x, y, s=sizes, alpha=0.4, color=colors)
 
