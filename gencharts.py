@@ -33,7 +33,7 @@ def plot_similar_books(matrix, chart_name):
         if book in textinput.BOOKS_APOCRYPHA: color = 'grey'
 
         colors.append(color)
-        sizes.append(1600)
+        sizes.append(500)
 
     matplotlib.pyplot.scatter(x, y, s=sizes, alpha=0.4, color=colors)
 
@@ -61,7 +61,7 @@ def plot_word_vectors(word_list, matrix, chart_name):
 
     for i in range(len(x)):
         colors.append('green')
-        sizes.append(2500)
+        sizes.append(500)
 
     matplotlib.pyplot.scatter(x, y, s=sizes, alpha=0.4, color=colors)
 
