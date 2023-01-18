@@ -1,5 +1,8 @@
 # embeddedbible
 
+# 1-17-23 Added the Deuterocanonical Apocrypha: This addition was appended to the end of bible.txt. 
+# 1-17-23 Modified textinput.py [Added all Apocrypha books] and gencharts.py [Color coded Apocrypha books grey in chart]
+
 Solutions to issues encountered with original code:
 
 Within genwordmodel.py - size parameter needs to be changed to (line 20):
